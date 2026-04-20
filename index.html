@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio interaktif geomeshlab. Geoscientist & Tech Developer dengan fokus pada Web-GIS, visualisasi data seismik, dan pemodelan 3D untuk membedah konsep geosains.">
+    <meta name="author" content="geomeshlab">
+
+    <title>geomeshlab | Geoscience & Tech Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">geo<span class="accent-orange">mesh</span>lab.</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>geomeshlab: Exploring Earth Through Code.</h1>
+            <p>A digital laboratory bridging the gap between earth sciences and interactive web technologies through Pop-Sci journalism and 3D visualization.</p>
+            <a href="#projects" class="btn-primary">Explore Our Work</a>
+        </div>
+        
+        <div class="hero-3d-model">
+            <model-viewer 
+                src="assets/Earth.glb" 
+                alt="Model 3D Kerak Bumi geomeshlab"
+                loading="lazy"
+                camera-controls 
+                auto-rotate
+                rotation-per-second="30deg"
+                interaction-prompt="auto"
+                disable-zoom>
+            </model-viewer>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About geomeshlab</h2>
+        <div class="about-container animate-on-scroll">
+        
+            <div class="about-text">
+                <p>Geoscientist & Tech Developer specializing in <strong>Web-GIS</strong>, <strong>Seismic Data Visualization</strong>, and <strong>Remote Sensing</strong>. Focused on making complex geoscience concepts accessible through interactive digital platforms.</p>
+                
+                <p>Currently seeking technical opportunities as a <strong>GIS Specialist</strong> or <strong>Surveyor</strong>, while actively preparing for advanced graduate studies (<strong>MEXT & LPDP 2026</strong>).</p>
+                
+                <div class="resume-wrapper">
+                    <a href="https://drive.google.com/file/d/14Zxqt5C1URBAPVO5SdYnH_-ZX0wFLApf/view?usp=sharing" class="btn-resume">Download Resume</a>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">GIS & Remote Sensing</div>
+                <div class="skill-item">Seismic Data Visualization</div>
+                <div class="skill-item">Vanilla JavaScript & HTML/CSS</div>
+                <div class="skill-item">Blender 3D Modeling</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <article class="project-card animate-on-scroll">
+                <img src="assets/thumb-gempa.webp" alt="Thumbnail Global Earthquake Catalog" class="project-image">
+                <h3>Global Earthquake Catalog Pro</h3>
+                <p>Real-time Web-GIS dashboard managing 10,000+ seismic records with zero lag.</p>
+                <a href="https://naufal1412.gumroad.com/l/earthquakecatalog" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <article class="project-card animate-on-scroll"></article>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+                <img src="assets/thumb-cuaca.webp" alt="Thumbnail Global Weather Dashboard" class="project-image">
+                <h3>Global Weather Dashboard</h3>
+                <p>Global weather monitoring using openweathermap.org free API key.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+                <article class="project-card animate-on-scroll"></article>
+            </article>
+
+            <article class="project-card animate-on-scroll">
+                <img src="assets/thumb-3d.webp" alt="Thumbnail Earths Crust 3D Model" class="project-image">
+                <h3>Earth's Interior 3D Model</h3>
+                <p>Interactive educational low-poly 3D animation built with Blender.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Watch Video</a>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section id="insights">
+        <h2>Scientific Insights</h2>
+        
+        <div class="insights-container animate-on-scroll">
+            <div class="coming-soon-badge">Coming Late 2026</div>
+            
+            <h3>Beyond the Dashboard</h3>
+            <p>Ruang ini sedang dipersiapkan untuk memuat analisis mendalam dan interpretasi geofisika di balik arsitektur pemrosesan data <strong>Global Earthquake Catalog</strong> dan observasi cuaca spasial. Berdedikasi untuk membedah sains di balik layar secara komprehensif.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Collaborate</h2>
+        <p>Interested in Web-GIS or geospatial storytelling?</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/muhammadnaufal240502" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/geomeshlab/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://naufal1412.gumroad.com/" target="_blank" rel="noopener noreferrer">Gumroad</a>
+            <a href="https://www.tiktok.com/@geomeshlab" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://lynk.id/m_naufal_52" target="_blank" rel="noopener noreferrer">Lynk.id</a>
+        </div>
+        <p class="copyright">&copy; 2026 geomeshlab. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
